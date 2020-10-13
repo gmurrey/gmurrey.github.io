@@ -1,17 +1,22 @@
 /* -------------------------------------- *
 General Styles
 * --------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Righteous&display=swap');
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
 }
-
+header {
+  background-image: url(../images/banners/jesse-g-c--4_XI_yXGDw-unsplash.jpg);
+  height: 260px;
+  background-position: 50% 78%;
+}
 h1,
 h2,
 h3 {
   font-size: 36px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Righteous, sans-serif;
 }
 main,
 header h1,
@@ -31,4 +36,10 @@ nav a:hover {
 nav {
   background-color: #ccc;
   padding: 12px;
+}
+.inspiro-img {
+  width: 400px;
+} 
+.white-text {
+  color: white
 }
