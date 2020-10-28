@@ -3,7 +3,7 @@
   }
   .shutter-page,body {
     margin: 0;
-    background-image: url("/gmurrey.github.io/images/project-1-images/shutter-speed.jpg");
+    background-image: url("/images/project-1-images/shutter-speed.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: cover;
@@ -11,7 +11,7 @@
   }
   .aperture-page,body {
     margin: 0;
-    background-image: url("/gmurrey.github.io/images/project-1-images/aperture.jpg");
+    background-image: url("/images/project-1-images/aperture.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: cover;
@@ -91,11 +91,21 @@
   flex-direction: column;
 }
 
-.middle .top,
-.middle .bottom {
+.middle .top {
   flex: 15%;
 }
 
+.flexmeyoujerk {
+  flex: 85%;
+}
+.bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
 .middle .content {
   flex: 60%;
 }
@@ -120,8 +130,8 @@
 }
 
 .accordian{
-  width: 40%;
   margin: 2.5rem;
+  display: flex;
 }
 
 .accordian-item{
@@ -130,6 +140,7 @@
   margin: 1rem;
   border-radius: .5rem;
   min-width: 250px;
+  flex: 1;
   opacity: 0.85;
 }
 
