@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+  }
+  .shutter-page,body {
+    margin: 0;
+    background-image: url("/gmurrey.github.io/images/project-1-images/shutter-speed.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center;
+  }
+  .aperture-page,body {
+    margin: 0;
+    background-image: url("/gmurrey.github.io/images/project-1-images/aperture.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center;
+  }
+  main div {
+
+  }
+  
+  main article {
+    border: none
+  }
+
+  body {
+    font-family: freight-text-pro, serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    border: none
+  }
+
+  a:link {
+  font-family: temeraire, serif;
+  text-decoration: none;
+  color: white;
+}
+
+.left,
+.right {
+  flex: 15%;
+}
+
+.left h1 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-orientation: sideways;
+  text-align: center;
+  text-orientation: sideways;
+  margin: 1rem;
+  color: white;
+}
+
+.right h1 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-orientation: sideways;
+  text-align: center;
+  text-orientation: sideways;
+  margin: 1rem;
+  color: white;
+}
+
+.shutter-page .left h1 {
+  color: white;
+  font-size: 7vw;
+  font-family: temeraire, serif;
+  font-weight: 900;
+  font-style: normal;
+  
+}
+.aperture-page .right h1 {
+  color: white;
+  font-size: 7vw;
+  font-family: temeraire, serif;
+  font-weight: 900;
+  font-style: normal;
+  
+}
+.middle {
+  flex: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.middle .top,
+.middle .bottom {
+  flex: 15%;
+}
+
+.middle .content {
+  flex: 60%;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.button_menu {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.7vw;
+}
+
+.accordian{
+  width: 40%;
+  margin: 2.5rem;
+}
+
+.accordian-item{
+  background-color: #333333;
+  color: white;
+  margin: 1rem;
+  border-radius: .5rem;
+  min-width: 250px;
+  opacity: 0.85;
+}
+
+.accordian-item-header{
+  padding: 15px 15px 15px 15px;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-family: freight-text-pro, serif;
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 3vw;
+}
+
+.accordian-item-header::after{
+  content: "\25BE";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  transition: transform 0.4s ease-in-out;
+}
+
+.accordian-item-header.active::after{
+  transform: rotate(180deg);
+}
+
+.accordian-item-body{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.accordian-item-body-content{
+  padding: 1rem;
+  line-height: 1.5rem;
+}
