@@ -1,9 +1,17 @@
 * {
     box-sizing: border-box;
   }
+  .home-page,body {
+    margin: 0;
+    background-image: url("/gmurrey.github.io/Projects/images/home.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center;
+  }
   .shutter-page,body {
     margin: 0;
-    background-image: url("/images/project-1-images/shutter-speed.jpg");
+    background-image: url("/gmurrey.github.io/Projects/images/shutter-speed.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: cover;
@@ -11,7 +19,25 @@
   }
   .aperture-page,body {
     margin: 0;
-    background-image: url("/images/project-1-images/aperture.jpg");
+    background-image: url("/gmurrey.github.io/Projects/images/aperture.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center;
+  }
+
+  .whiteBalance-page,body {
+    margin: 0;
+    background-image: url("/gmurrey.github.io/Projects/images/white-balance.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center;
+  }
+
+  .iso-page,body {
+    margin: 0;
+    background-image: url("/gmurrey.github.io/Projects/images/iso.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: cover;
@@ -75,16 +101,50 @@
   font-family: temeraire, serif;
   font-weight: 900;
   font-style: normal;
-  
+  padding-bottom: 1.5vw;
 }
+
 .aperture-page .right h1 {
   color: white;
   font-size: 7vw;
   font-family: temeraire, serif;
   font-weight: 900;
   font-style: normal;
-  
 }
+
+.iso-page .top h1 {
+  color: white;
+  font-size: 7vw;
+  font-family: temeraire, serif;
+  font-weight: 900;
+  font-style: normal;
+  position: fixed;
+  left: 8%;
+  right: 0;
+}
+
+.whiteBalance-page .top h1 {
+  color: white;
+  font-size: 7vw;
+  font-family: temeraire, serif;
+  font-weight: 900;
+  font-style: normal;
+  position: fixed;
+  left: 8%;
+  right: 0;
+}
+
+.home-page .top h1 {
+  color: white;
+  font-size: 7vw;
+  font-family: temeraire, serif;
+  font-weight: 900;
+  font-style: normal;
+  position: fixed;
+  right: 11%;
+
+}
+
 .middle {
   flex: 65%;
   display: flex;
@@ -98,7 +158,14 @@
 .flexmeyoujerk {
   flex: 85%;
 }
-.bottom {
+
+.home-page .button_menu{
+  position: fixed;
+  top: 10%;
+  text-align: center;
+  font-size: 5vw;
+}
+.aperture-page .bottom {
   position: fixed;
   left: 0;
   right: 0;
@@ -132,6 +199,7 @@
 .accordian{
   margin: 2.5rem;
   display: flex;
+  align-items: flex-start;
 }
 
 .accordian-item{
@@ -148,14 +216,14 @@
   padding: 15px 15px 15px 15px;
   min-height: 3.5rem;
   line-height: 1.25rem;
-  font-family: freight-text-pro, serif;
-  font-weight: 500;
-  font-style: normal;
   display: flex;
   align-items: center;
   position: relative;
   cursor: pointer;
-  font-size: 3vw;
+  font-size: 2.5vw;
+  font-family: temeraire, serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 .accordian-item-header::after{
@@ -178,5 +246,9 @@
 
 .accordian-item-body-content{
   padding: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
+  font-family: freight-text-pro, serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.8vw;
 }
