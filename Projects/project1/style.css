@@ -3,7 +3,7 @@
   }
   .home-page,body {
     margin: 0;
-    background-image: url("/gmurrey.github.io/Projects/images/home.jpg");
+    background-image: url("./images/home.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: cover;
@@ -11,7 +11,7 @@
   }
   .shutter-page,body {
     margin: 0;
-    background-image: url("/gmurrey.github.io/Projects/images/shutter-speed.jpg");
+    background-image: url("./images/shutter-speed.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: cover;
@@ -19,7 +19,7 @@
   }
   .aperture-page,body {
     margin: 0;
-    background-image: url("/gmurrey.github.io/Projects/images/aperture.jpg");
+    background-image: url("./images/aperture.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: cover;
@@ -28,7 +28,7 @@
 
   .whiteBalance-page,body {
     margin: 0;
-    background-image: url("/gmurrey.github.io/Projects/images/white-balance.jpg");
+    background-image: url("./images/white-balance.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: cover;
@@ -37,14 +37,11 @@
 
   .iso-page,body {
     margin: 0;
-    background-image: url("/gmurrey.github.io/Projects/images/iso.jpg");
+    background-image: url("./images/iso.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: cover;
     background-position: center;
-  }
-  main div {
-
   }
   
   main article {
@@ -110,6 +107,9 @@
   font-family: temeraire, serif;
   font-weight: 900;
   font-style: normal;
+  position: fixed;
+  top: 8%;
+  right: 0%;
 }
 
 .iso-page .top h1 {
@@ -119,8 +119,9 @@
   font-weight: 900;
   font-style: normal;
   position: fixed;
-  left: 8%;
+  left: 80px;
   right: 0;
+  top: -5%;
 }
 
 .whiteBalance-page .top h1 {
@@ -132,6 +133,7 @@
   position: fixed;
   left: 8%;
   right: 0;
+  top: -5%;
 }
 
 .home-page .top h1 {
@@ -190,10 +192,14 @@
   border: none;
   color: white;
   padding: 15px 32px;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1.7vw;
+  opacity: 70%;
+}
+
+.button_menu:hover{
+  opacity: 100%;
 }
 
 .accordian{
@@ -202,12 +208,25 @@
   align-items: flex-start;
 }
 
+.iso-page .accordian{
+  position: fixed;
+  left: 20%;
+  top: 20%;
+}
+
+.whiteBalance-page .accordian{
+  position: fixed;
+  left: 5%;
+  top: 15%;
+}
+
 .accordian-item{
   background-color: #333333;
   color: white;
   margin: 1rem;
   border-radius: .5rem;
   min-width: 250px;
+  max-width: 350px;
   flex: 1;
   opacity: 0.85;
 }
@@ -251,4 +270,51 @@
   font-weight: 500;
   font-style: normal;
   font-size: 1.8vw;
+}
+
+.left-iso{ 
+    position: fixed;
+    top: 22%;
+    max-width: 100px;
+    line-height: 40px;
+}
+
+.right-wb{ 
+  position: fixed;
+  top: 17%;
+  max-width: 100px;
+  line-height: 40px;
+  right: 10%;
+}
+
+.linkOne .button_menu{
+  position: fixed;
+  top: 250px;
+  left: 100px;
+  max-width: 100px;
+  line-height: 70px;
+}
+
+.linkTwo .button_menu{
+  position: fixed;
+  top: 500px;
+  left: 100px;
+  max-width: 100px;
+  line-height: 70px;
+}
+
+.linkThree .button_menu{
+  position: fixed;
+  top: 250px;
+  right: 250px;
+  max-width: 100px;
+  line-height: 70px;
+}
+
+.linkFour .button_menu{
+  position: fixed;
+  top: 475px;
+  right: 300px;
+  max-width: 100px;
+  line-height: 70px;
 }
