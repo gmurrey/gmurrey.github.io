@@ -38,7 +38,12 @@ nav {
   padding: 12px;
 }
 .inspiro-img {
+  padding: 10px;
   width: 400px;
+  height: 230px;
+  object-fit: cover;
+  object-position: 0px 0px;
+  
 } 
 .white-text {
   color: white
