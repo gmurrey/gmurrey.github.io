@@ -49,4 +49,39 @@
   .logo{
       width: 18vh;
   }
-  
+
+  /* don't need these */
+body {
+  margin: 0;
+}
+main {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+}
+
+/* END don't need these */
+
+.slider {
+  margin: 0 auto;
+  width: 150vw;
+}
+
+.slide-content .text-content {
+  width: 100%;
+}
+
+.slide-content img {
+  width: 100%;
+}
+
+.slick-slide {
+  margin: 0;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .slider {
+    width: 100vw;
+  }
+}
