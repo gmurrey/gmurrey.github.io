@@ -6,7 +6,8 @@
     <link rel="stylesheet" type="text/css" href="/gmurrey.github.io/slideshow/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="/gmurrey.github.io/slideshow/slick/slick-theme.css"/>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="main.js">
+    <link rel="stylesheet" href="order.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>DB Dessert Company</title>
   </head>
@@ -20,6 +21,58 @@
           <i class="fa fa-bars"></i>
         </a>
     </div>
+    <h1>Order Online</h1>
+    <div class="container">
+      <form action="action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="John">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Smith">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="country">Country</label>
+          </div>
+          <div class="col-75">
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">E-mail</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="johnsmith@gmail.com">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Please type item, quantity, and theme of what you would like. We will email you back with a quote!</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="I would like..." style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Order">
+        </div>
+      </form>
+    </div> 
     <script src="main.js"></script>
   </body>
 </html>
