@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
 }
@@ -17,6 +18,11 @@ h1 {
   font-size: xx-large;
   color: #e2c9d1;
 }
+
+.bigger-h1 {
+  font-size: 80px;
+}
+
 h2,
 ul {
   padding: 0px 20px;
@@ -25,20 +31,25 @@ ul {
   font-size: x-large;
   color: #e2c9d1;
 }
+
 .menu-page li {
   text-align: center;
 }
+
 .grid-60-40 {
   display: grid;
   grid-template-columns: 60% 40%;
   grid-gap: 40px;
 }
+
 .left {
   grid-column: 2 /3;
 }
+
 .right {
   grid-column: 1 /2;
 }
+
 p {
   padding: 20px 20px;
   font-family: Helvetica, sans-serif;
@@ -48,9 +59,14 @@ p {
   line-height: 150%;
 }
 
+.bigger-p {
+  font-size: 30px
+}
+
 .logo {
   margin-top: -30px;
 }
+
 .classesImg {
   padding: 20px;
   width: 40vh;
@@ -80,6 +96,7 @@ p {
 
 .menu-page li {
   list-style-type: none;
+  line-height: 50px;
 }
 /* Add a black background color to the top navigation */
 .topnav {
@@ -122,6 +139,9 @@ p {
   .grid-60-40 {
     grid-template-columns: 1fr;
   }
+}
+.grid-60-40 p{
+  margin-right: 20px;
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
